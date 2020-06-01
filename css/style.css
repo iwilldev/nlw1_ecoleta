@@ -1,0 +1,27 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+Box Model 
+Todos os elementos html recebem o formato de caixa, por padrão
+inline: ocupa espaço do conteúdo
+block: ocupa toda a linha da página
+*/
+
+header {
+    display: flex; /* Coloca os elementos lado a lado (block) */
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Justifica os elementos, inserindo um espaço entre eles */
+
+}
+
+.red { /* Classe para definir a cor de fundo */
+    background-color: red; 
+}
+
+.content { /* Classe para definir a largura (proporcional e máxima) da página */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; /* Atribuindo margem: 0 (top e bottom) e auto (left e right) */
+}
