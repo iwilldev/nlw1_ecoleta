@@ -129,7 +129,7 @@ block: ocupa toda a linha da página
     text-align: center;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 720px) {
     #page-home {
         background-position-x: 150vw;
     }
