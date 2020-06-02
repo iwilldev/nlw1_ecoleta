@@ -35,7 +35,10 @@ block: ocupa toda a linha da página
 #page-home {
     background: url("../assets/home-background.png") no-repeat;
     height: 100vh; /* Define a classe com 100% da altura da página visível: Viewport Height*/
-    background-position: 35vw bottom;
+    background-position: absolute;
+    background-size: 60%;
+    background-position-x: 90%;
+    background-position-y: bottom;
 }
 
 #page-home .content { /* Classe para definir a largura (proporcional e máxima) da página */
@@ -125,9 +128,9 @@ block: ocupa toda a linha da página
     text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     #page-home {
-        background-position-x: 80vw;
+        background-position-x: 150vw;
     }
     #page-home .content {
         align-items: center;
