@@ -96,16 +96,56 @@ form button {
     width: 260px;
     height: 56px;
     background-color: var(--verm);
-    border-radius: 0 25px;
+    border-radius: 25px 0 25px 25px;
     color: var(--bran);
     font-weight: bold;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     border: 0;
     margin-top: 40px;
-    transition: background-color: 400ms;
+    transition: background-color 400ms;
+    cursor: pointer;
 }
 
 form button:hover {
     background-color: #cc3e3e;
+}
+
+.items-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #131313;
+    list-style: none;
+    border: 2px solid #131313;
+    height: 180px;
+    border-radius: 10px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-grid li span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--bran);
+    margin-top: 12px;
+}
+
+.items-grid li.selected {
+    background-color: rgba(255, 75, 75, 0.2);
+    border: 2px solid #ff4b4b;
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
 }
