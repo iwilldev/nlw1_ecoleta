@@ -43,12 +43,21 @@ form fieldset {
     border: 0;
 }
 
-form legend {
+form fieldset legend {
     margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-form legend h2 {
+form fieldset legend h2 {
     font-size: 24px;
+}
+
+form fieldset legend span {
+    font-size: 14px;
+    color: var(--bran);
 }
 
 form .field {
@@ -109,6 +118,31 @@ form button {
 
 form button:hover {
     background-color: #cc3e3e;
+}
+
+form .field-group .field .upload {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+form .field-group .field .upload .botao {
+    background-color: #131313;
+    border: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    color: var(--bran);
+    margin-top: 7px;
+    width: 100%;
+}
+
+form .field-group .field .upload input {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .items-grid {

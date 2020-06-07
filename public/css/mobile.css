@@ -1,5 +1,5 @@
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     #page-home {
         background-position-x: 150vw;
     }
@@ -9,12 +9,18 @@
     }
     #page-home header a {
         position: absolute;
-        bottom: 48px;
+        bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
     }
+    #page-home .content header a span {
+        display: none;
+    }
     #page-home main {
         align-items: center;
+    }
+    #page-home main h1 {
+        font-size: 38px;
     }
     #page-results .cards {
         grid-template-columns: 1fr;
@@ -22,6 +28,17 @@
     #page-results .cards img {
         grid-template-columns: 1fr;
         height: 200px;
+    }
+    form .field-group {
+        flex-direction: column;
+    }
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+    .items-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
 }
 
